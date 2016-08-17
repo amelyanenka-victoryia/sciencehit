@@ -1,0 +1,332 @@
+/* Fonts 
+______________________________________________________________*/
+@font-face {
+  font-family: 'ptsanscaption';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/pt_sans_caption/PT_Sans-Caption-Web-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'ptsansnarrow';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'ptsansnarrow';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'ptserif';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/pt_serif/PT_Serif-Web-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'ptserif';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../fonts/pt_serif/PT_Serif-Web-Italic.ttf') format("truetype");
+}
+/* Styles
+______________________________________________________________*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background: url(../img/skeleton.png) no-repeat 25% 33%, url(../img/top_background2.png) 50% 25px;
+}
+.nav-links {
+}
+.nav-links ul{
+    display:flex;
+    height: 80px;
+    ajustify-content:center;
+    align-items:center;
+    padding:0;
+    margin:0;
+    flex-wrap:wrap;
+}
+
+.nav-links li{
+    list-style:none;
+    margin:0 25px;
+}
+.nav-links a{
+    color: #999;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'ptsanscaption', Arial, sans-serif;
+    transition: color 0.2s ease-out;
+}
+.nav-links a:hover{
+    color: #555;
+}
+
+.place-date{
+    display: block;
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+.registration {
+    display:block;
+    width:100%;
+    background:#fa4556;
+    height:70px;
+    line-height:70px;
+    text-align:center;
+    font-family: 'ptsansnarrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.2s ease-out;
+}
+.registration:hover{
+    background: #ee2028;
+}
+
+.video-container{
+    padding: 40px 0;
+}
+.themes-container{
+    width: 100%;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom: 30px;
+}
+.themes-container > h2{
+    text-align: center;
+}
+
+.authors-container{
+    width: 940px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.authors-container.ac2 .horizontal-wrapper{
+    order:2;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.horizontal-wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    flex:1;
+    margin-right: 20px;
+}
+.vertical-wrapper{
+    display: flex;
+    flex-grow:0;
+    flex-basis:286px;
+}
+
+.speaker{
+    flex:1;
+    display: flex;
+}
+.vertical-wrapper .speaker{
+    flex-direction:column;
+}
+.speaker-info{
+    height: 270px;
+    width: 270px;
+    flex-grow:0;
+    background: #fff;
+    display:flex;
+    flex-direction:column;
+}
+.speaker-photo {
+    flex-grow:0;
+}
+.speaker-photo img{
+    height:100%;
+    width:auto;
+}
+.speaker-person {
+    flex:1;
+    text-align:left;
+    padding:27px 30px;
+    box-sizing:border-box;
+}
+.speaker-name {
+    margin:0;
+    font-family:'ptsanscaption', Arial, sans-serif;
+    font-size:22px;
+    line-height:24px;
+    font-weight:normal;
+    letter-spacing:-2px;
+    text-transform:uppercase;
+    color:#000;
+}
+.speach-theme {
+    font-family:'ptserif', Arial, sans-serif;
+    font-style:italic;
+    font-size:18px;
+    color:#8d8d8d;
+}
+.theme-info{
+    flex:1;
+    font-family: 'ptserif', Arial, sans-serif;
+    font-size:28px;
+    line-height:30px;
+    text-align:center;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    color:#000;
+}
+
+/*Speaker Specific Styles*/
+.spk1{
+    border: 8px solid #fb3e4d;
+    margin-bottom: 20px;
+}
+.spk2{
+    border: 8px solid #2196f3;
+}
+.spk3{
+    border: 8px solid #2196f3;
+}
+
+.spk4{
+    border: 8px solid #fb3e4d;
+}
+.spk5{
+    border: 8px solid #fb3e4d;
+    margin-bottom: 20px;
+}
+.spk6{
+    border: 8px solid #2196f3;
+}
+.spk1 .theme-info{
+    background: #faebeb url(../img/spk1.png) 50% 50% no-repeat;
+    background-size: cover;
+    order:-1;
+}
+.spk2 .theme-info{
+    background: #2196f3 url(../img/spk2.png) 50% 120% no-repeat;
+    color: #fff;
+}
+.spk2 .theme-info span{
+    font-size: 36px;
+    line-height: 40px;
+    width: 80%;
+    margin-bottom: 35%;
+}
+.spk2 .speaker-photo{
+    order:2;
+}
+.spk2 .speaker-person{
+    width: 80%;
+}
+.spk3 .theme-info{
+    background: #e0eef9 url(../img/spk3.png) 50% 50% no-repeat;
+    background-size: cover;
+    order:-1;
+}
+
+.spk3 .speaker-photo{
+    order:2;
+    text-align: right;
+}
+
+.spk4 .theme-info{
+    background: #fb3e4d url(../img/spk4.png) 50% 50% no-repeat;
+    background-size: cover;
+    order:-1;
+    color: #fff;
+}
+.spk4 .theme-info span{
+    font-size: 24px;
+}
+.spk4 .speaker-photo{
+    text-align: right;
+}
+
+.spk5 .theme-info{
+    background: #f5f5f5 url(../img/spk5.png) 0% 100% no-repeat;
+}
+.spk5 .theme-info span{
+    width: 80%;
+    margin-bottom: 20%;
+}
+.spk5 .speaker-name{
+    width: 80%;
+}
+.spk5 .speaker-photo{
+    text-align: right;
+}
+
+.spk6 .theme-info{
+    background: #2196f3 url(../img/spk6.png) 100% 0% no-repeat;
+    color: #fff;
+    order:-1;
+}
+.spk6 .theme-info span{
+    font-size: 36px;
+    line-height: 40px;
+    width: 80%;
+}
+.spk6 .speaker-name{
+    width: 80%;
+}
+.spk6 .speaker-photo{
+    order:2;
+    text-align: right;
+}
+/* Map
+______________________________________________________________*/
+#map{
+    width: 100%;
+    height: 420px;
+}
+
+/* Media-Queries
+______________________________________________________________*/
+@media (min-width: 1600px) {
+    .header {
+        background: url(../img/skeleton.png) no-repeat 33% 33%, url(../img/top_background2.png) 50% 25px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .header {
+        background: url(../img/skeleton.png) no-repeat 10% 33%, url(../img/top_background2.png) 50% -30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        background: url(../img/skeleton.png) no-repeat -3% 33%, url(../img/top_background2.png) 50% -30%;
+    }
+
+    
+    iframe{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        background: url(../img/skeleton.png) no-repeat -70px 33%, url(../img/top_background2.png) 50% -30%;
+    }
+}
